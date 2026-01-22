@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+    }
+    header {
+      background: #4f46e5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      background: #4338ca;
+      padding: 0.75rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #e5e7eb;
+      color: #555;
+    }
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #4338ca;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+    <p>A simple website made with HTML, CSS, and JavaScript</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>This is a basic website you can customize. Change the text, colors, and layout to make it yours.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <p>List your projects, hobbies, or anything you want to show here.</p>
+      <button onclick="showMessage()">Click me</button>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>You can add your email or a contact form here.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 My Website</p>
+  </footer>
+
+  <script>
+    function showMessage() {
+      alert('Hello! This website is working 🎉');
+    }
+  </script>
+</body>
+</html>
